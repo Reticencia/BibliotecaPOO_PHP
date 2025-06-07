@@ -35,7 +35,15 @@ class Libro{
     }
 
     public function devolver():void{
-        $this->desponible = true;
+        $this->disponible = true;
+    }
+    
+    public function estaDisponible(): bool {
+        return $this->disponible;
+    }
+
+    public function getTitulo(): string {
+        return $this->titulo;
     }
 }
 
